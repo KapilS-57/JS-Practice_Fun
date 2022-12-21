@@ -60,4 +60,5 @@ updateVegetablesCollection(veggies, "spinach");
 updateVegetablesCollection(veggies, "spinach");
 // spinach already exists in the veggies collection.
 
-
+let randomNum1To6 = Math.floor(Math.random() * 6) + 1;
+console.log(randomNum1To6);
