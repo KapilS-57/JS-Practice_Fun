@@ -37,3 +37,23 @@ console.log(totalMoney); // 30
 kapil = kapil + 1;
 
 console.log(totalMoney); //30
+
+// increment 
+kapil++;
+
+// kapil--;
+
+// kapil *= 5;
+// kapil /= 5;
+
+const pi = 3.14;
+const kgToGrams = 1000;
+const daysInAWeek = 7;
+
+console.log(pi);
+console.log(kgToGrams);
+console.log(daysInAWeek);
+
+//  booleans
+// true / false
+
