@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Intro</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(173, 183, 192);
+        }
+
+        .container {
+            /* width: 1000px; */
+            display: flex;
+            position: relative;
+            justify-content: space-evenly;
+        }
+
+        #circle {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: tomato;
+            margin: 0 50px;
+        }
+
+        #square {
+            width: 200px;
+            height: 200px;
+            /* border-radius: 50%; */
+            background-color: aquamarine;
+            /* padding: 0 50px; */
+            margin: 0 50px;
+        }
+
+        #triangle {
+            width: 0;
+            height: 0;
+            border-left: 100px solid transparent;
+            border-right: 100px solid transparent;
+            border-bottom: 200px solid rgb(55, 172, 68)
+        }
+
+        /* #traingle:hover,
+        #circle:hover,
+        #square:hover {
+            width: 210px;
+            height: 210px;
+        } */
+    </style>
+    <script src="./jquery.js"></script>
+</head>
+
+<body>
+    <header style="margin-bottom: 80px;">
+        <h2>Steps to use jQuery for Offline projects</h2>
+        <ol>
+            <li>Go to <a href="https://jquery.com/">jQuery.com</a> and go in downloads.</li>
+            <li>Click on the compressed version.</li>
+            <li>Copy the complete code.</li>
+            <li>Paste it inside your project file with .js as extension.</li>
+            <li>Include the .js file in you html file with script tag.</li>
+        </ol>
+    </header>
+
+    <div class="container">
+        <div id="circle"></div>
+        <div id="square"></div>
+        <!-- <div class="square"></div> -->
+        <div id="triangle"></div>
+    </div>
+
+    <script>
+        if (jQuery == "undefined") {
+            alert("Jquery is not included");
+        } else {
+            alert("jQuery is included");
+        }
+        $("#circle").click(function () {
+            alert("Your clicked on circle.")
+        })
+        $("#square").click(function () {
+            alert("Your clicked on square.")
+        })
+        $("#triangle").click(function () {
+            alert("Your clicked on triangle.")
+        })
+    </script>
+</body>
+
+</html>
